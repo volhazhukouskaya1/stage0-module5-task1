@@ -21,26 +21,26 @@ public class AlgorithmComplexity {
      */
     public Complexity badLinerSearch() {
 
-    }
+    return Complexity.O_N;}
 
     /**
      * Return the complexity of accessing an array element by index.
      */
     public Complexity arrayIndexItemAccess() {
-
+   return Complexity.O_1;
     }
 
     /**
      * Return the complexity of a binary search.
      */
     public Complexity binarySorting() {
-
+    return  Complexity.O_LOG_N;
     }
 
     /**
      * Return the complexity of the twoCycleSorting algorithm.
      */
     public Complexity twoCycleSorting() {
-
+    return Complexity.O_N_2;
     }
 }
