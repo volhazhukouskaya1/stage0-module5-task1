@@ -1,7 +1,5 @@
 package com.epam.mjc.stage0;
 
-import java.util.Arrays;
-
 /**
  * Here are the tasks for working with the arrays.
  * <p>
@@ -30,7 +28,7 @@ public class ArrayTasks {
     public int[] generateNumbers(int length) {
 
         int[] numbers = new int[length];
-        for (int i=0; i<length-1; i++) {
+        for (int i=0; i<length; i++) {
         numbers[i] = i+1; }
         return numbers;
     }
@@ -46,8 +44,8 @@ public class ArrayTasks {
     public int totalSum(int[] arr) {
 
         int sum = 0;
-        for (int j : arr) {
-            sum += j;
+        for (int j =0; j<arr.length; j++) {
+            sum += arr[j];
         }
         return sum;
 
@@ -84,7 +82,7 @@ public class ArrayTasks {
      String [] array = new String [arr.length];
       int n = arr.length-1;
 
-      for ( int i=0; i<arr.length-1; i++) {
+      for ( int i=0; i<arr.length; i++) {
           array[i]=arr[n];
           n--;
       }
@@ -102,11 +100,17 @@ public class ArrayTasks {
      * arr = [1, 2]         -> [1, 2]
      */
     public int[] getOnlyPositiveNumbers(int[] arr) {
+        int j =0;
+        for (int i=0; i<arr.length; i++) {
+            if (arr[i]>0) {
+                j++;
+            }
 
-       int [] arr1 = new int [arr.length];
+        }
+        int [] arr1 = new int [j];
         int n=0;
 
-        for (int i=0; i<=arr.length-1; i++) {
+        for (int i=0; i<arr.length; i++) {
             if (arr[i]>0) {
                 arr1[n]=arr[i];
                 n++;
